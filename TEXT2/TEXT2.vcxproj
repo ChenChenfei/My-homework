@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\My-homework\Time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\My-homework\test3-main.cpp" />
+    <ClCompile Include="..\..\My-homework\test3-Time.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{87DF4A19-7DE7-4EDA-BE12-9131DDA6CBC3}</ProjectGuid>
@@ -122,8 +129,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

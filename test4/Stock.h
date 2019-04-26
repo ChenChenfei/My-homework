@@ -1,4 +1,5 @@
-#ifndef STOCK
+//Stock.h
+
 #define STOCK
 #include<iostream>
 using namespace std;
@@ -16,4 +17,3 @@ public:
     int Number;
     float Max,Min,Begin,End;
 };
-#endif

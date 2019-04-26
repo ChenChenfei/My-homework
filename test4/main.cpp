@@ -1,4 +1,5 @@
-#include"Stock.h"
+#include "Stock.h"
+#include<iostream>
 using namespace std;
 int main()
 {
@@ -21,6 +22,7 @@ int main()
     {
         add(arr[i],arr[i+1]);
     }
+    getchar();
     return 0;
 }
 void add(Stock &a,Stock &b)

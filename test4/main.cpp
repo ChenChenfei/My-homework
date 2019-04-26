@@ -4,7 +4,7 @@ int main()
 {
     Stock arr[5];
     Stock* a,*b;
-    void add(Stock*,Stock*);
+    void add(Stock&,Stock&);
     //测试代码
     Stock m(0,0,0,0,0);
     m.Show_Stock();
@@ -19,14 +19,13 @@ int main()
     }
     for (int i = 0; i < N-1; i++)
     {
-        add(&arr[i],&arr[i+1]);
+        add(arr[i],arr[i+1]);
     }
     return 0;
 }
-void add(Stock*a,Stock*b)
+void add(Stock &a,Stock &b)
 {
-    int m1,m2;
-    m1=a->Get_End;
-    m2=b->Get_End;
-    cout<<(m1-m2)/m1<<endl;
+ float n;
+ n=(b.Get_End()-a.Get_End())/a.Get_End();
+    cout<<n<<endl;
 }

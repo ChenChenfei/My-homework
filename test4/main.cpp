@@ -25,7 +25,7 @@ int main()
 }
 void add(Stock &a,Stock &b)
 {
- float n;
- n=(b.Get_End()-a.Get_End())/a.Get_End();
+ 	float n;
+ 	n=(b.Get_End()-a.Get_End())/a.Get_End();
     cout<<n<<endl;
 }

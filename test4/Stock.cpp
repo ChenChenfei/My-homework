@@ -34,18 +34,18 @@ float Stock::Get_End()
 //显示当天的所有数据
 void Stock::Show_Stock()
 {
-    cout<<"编号："<<Number<<"\t";
-    cout<<"最高盘价："<<Max<<"\t";
-    cout<<"最低盘价："<<Min<<"\t";
-    cout<<"开盘价："<<Begin<<"\t";
-    cout<<"收盘价："<<End<<"\t";
+    cout<<"Number："<<Number<<"\t";
+    cout<<"Max："<<Max<<"\t";
+    cout<<"Min："<<Min<<"\t";
+    cout<<"Begin："<<Begin<<"\t";
+    cout<<"End："<<End<<"\t";
 }
 //通过输入确当天数据
 void Stock::Set_Stock()
 {
     cout<<"Number: ";cin>>Number;
-    cout<<"开盘价： ";cin>>Begin;
-    cout<<"收盘价： ";cin>>End;
-    cout<<"最高盘价： ";cin>>Max;
-    cout<<"最低盘价： ";cin>>Min;
+    cout<<"Begin： ";cin>>Begin;
+    cout<<"End： ";cin>>End;
+    cout<<"Max： ";cin>>Max;
+    cout<<"Min： ";cin>>Min;
 }

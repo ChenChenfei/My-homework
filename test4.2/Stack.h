@@ -20,3 +20,4 @@ class Stacklink
     Type pop();
     int isnull();
 };
+//my laptap to my computer,test

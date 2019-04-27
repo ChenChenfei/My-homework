@@ -70,3 +70,4 @@ void add(Stock &a,Stock &b)
  	n=(b.Get_End()-a.Get_End())/a.Get_End();
     cout<<n<<endl;
 }
+//this a test 22:18

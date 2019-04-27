@@ -45,7 +45,7 @@ int main()
     int m1;
     for (int i = 0; i < 2; i++)
     {
-        m1=p1[i].Compare_Stock;
+        m1=Compare_Stock(p1[i]);
         if (m1==1)
         {
             cout<<"today's Begin is higher than End"<<endl;

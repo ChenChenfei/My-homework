@@ -15,7 +15,8 @@ public:
     float Get_End();
     static int Get_N_count();
     void Assign_Stock(Stock&);
-    private:
+    friend int Compare_Stock(Stock&);
+private:
     static int N_count;
     int Number;
     float Max,Min,Begin,End;

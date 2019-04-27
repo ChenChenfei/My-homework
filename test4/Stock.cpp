@@ -52,3 +52,22 @@ void Stock::Assign_Stock(Stock& p)
         End=p.End;
     }
 }
+//比较当日的开盘价与收盘价，若是开盘价>收盘价，返回真，否则，返回假
+int Compare_Stock(Stock &p)
+{
+    if (p.Begin>p.End)
+    {
+        return 1;
+    }
+    if (p.Begin<p.End)
+    {
+        return -1;
+    }
+    if (p.End==p.Begin)
+    {
+        return 0;
+    }
+    
+    
+    
+}

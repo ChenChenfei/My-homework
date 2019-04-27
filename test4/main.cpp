@@ -40,8 +40,26 @@ int main()
     {
         p2[i].Show_Stock();
     }
+
+    //计算当日收盘价与开盘价的大小关系
+    int m1;
+    for (int i = 0; i < 2; i++)
+    {
+        m1=p1[i].Compare_Stock;
+        if (m1==1)
+        {
+            cout<<"today's Begin is higher than End"<<endl;
+        }
+        if (m1==-1)
+        {
+            cout<<"today's Begin is lower than End"<<endl;
+        }
+        if (m1==0)
+        {
+            cout<<"today's Begin as same as End"<<endl;
+        }
     
-    
+    }
     
     getchar();
     return 0;

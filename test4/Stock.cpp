@@ -1,31 +1,17 @@
 #include"Stock.h"
 using namespace std;
-//带有默认参数的构造函数及不带参数的构造函数
-Stock::Stock()
+//设置当日的天数、股票开盘价，收盘价，最高价格，最低价格
+
+void Stock::Set_Stock(int n,float ma,float mi,float b,float e)
 {
-    Max=0;
-    Min=0;
-    Begin=0;
-    End=0;
-    Number=0;
-}
-Stock::Stock(int n,float ma,float mi,float b,float e)
-{
+    N_count++;
     Number=n;
     Max=ma;
     Min=mi;
     Begin=b;
     End=e;
 }
-//设置当日的天数、股票开盘价，收盘价，最高价格，最低价格
-void Stock::Set_Stock(int n,float ma,float mi,float b,float e)
-{
-     Number=n;
-    Max=ma;
-    Min=mi;
-    Begin=b;
-    End=e;
-}
+
 //获取当天的收盘价格
 float Stock::Get_End()
 {
@@ -48,4 +34,21 @@ void Stock::Set_Stock()
     cout<<"End： ";cin>>End;
     cout<<"Max： ";cin>>Max;
     cout<<"Min： ";cin>>Min;
+}
+//获取目前对象个数
+int Stock::Get_N_count()
+{
+    return N_count;
+}
+//将数据复制到当前对象
+void Stock::Assign_Stock(Stock& p)
+{
+    if(this!=&p)
+    {
+        Number=p.Number;
+        Max=p.Max;
+        Min=p.Min;
+        Begin=p.Begin;
+        End=p.End;
+    }
 }

@@ -6,10 +6,11 @@ int main()
     Stock arr[5];
     Stock* a,*b;
     void add(Stock&,Stock&);
-    //测试代码
+
     Stock m(0,0,0,0,0);
     m.Show_Stock();
-    //测试结束
+   
+    //使用Set_Stock进行赋值
     for (int i = 0; i < N; i++)
     {
         arr[i].Set_Stock();
@@ -22,6 +23,26 @@ int main()
     {
         add(arr[i],arr[i+1]);
     }
+    cout<<"the number of data is: "<<Stock::Get_N_count()<<endl;
+
+    //使用Assign_Stock进行赋值
+    Stock p1[2],p2[2];
+    int i;
+    for ( i = 0; i < 2; i++)
+    {
+       p1[i].Set_Stock();
+    }
+    for ( i = 0; i < 2; i++)
+    {
+        p2[i].Assign_Stock(p1[i]);
+    }
+    for ( i = 0; i < 2; i++)
+    {
+        p2[i].Show_Stock();
+    }
+    
+    
+    
     getchar();
     return 0;
 }

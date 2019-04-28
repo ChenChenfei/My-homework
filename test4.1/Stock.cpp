@@ -2,7 +2,7 @@
 using namespace std;
 
  int Stock::N_count;
-//è®¾ç½®å½“æ—¥çš„å¤©æ•°ã€è‚¡ç¥¨å¼€ç›˜ä»·ï¼Œæ”¶ç›˜ä»·ï¼Œæœ€é«˜ä»·æ ¼ï¼Œæœ€ä½ä»·æ ¼
+//ÉèÖÃµ±ÈÕµÄÌìÊı¡¢¹ÉÆ±¿ªÅÌ¼Û£¬ÊÕÅÌ¼Û£¬×î¸ß¼Û¸ñ£¬×îµÍ¼Û¸ñ
  Stock::Stock(int n,float ma,float mi,float b,float e)
 {
     N_count++;
@@ -13,35 +13,35 @@ using namespace std;
     End=e;
 }
 
-//è·å–å½“å¤©çš„æ”¶ç›˜ä»·æ ¼
+//»ñÈ¡µ±ÌìµÄÊÕÅÌ¼Û¸ñ
 float Stock::Get_End()
 {
     return End;
 }
-//æ˜¾ç¤ºå½“å¤©çš„æ‰€æœ‰æ•°æ®
+//ÏÔÊ¾µ±ÌìµÄËùÓĞÊı¾İ
 void Stock::Show_Stock()
 {
-    cout<<"Numberï¼š"<<Number<<"\t";
-    cout<<"Maxï¼š"<<Max<<"\t";
-    cout<<"Minï¼š"<<Min<<"\t";
-    cout<<"Beginï¼š"<<Begin<<"\t";
-    cout<<"Endï¼š"<<End<<"\t";
+    cout<<"Number£º"<<Number<<"\t";
+    cout<<"Max£º"<<Max<<"\t";
+    cout<<"Min£º"<<Min<<"\t";
+    cout<<"Begin£º"<<Begin<<"\t";
+    cout<<"End£º"<<End<<endl;
 }
-//é€šè¿‡è¾“å…¥ç¡®å½“å¤©æ•°æ®
+//Í¨¹ıÊäÈëÈ·µ±ÌìÊı¾İ
 void Stock::Set_Stock()
 {
     cout<<"Number: ";cin>>Number;
-    cout<<"Beginï¼š ";cin>>Begin;
-    cout<<"Endï¼š ";cin>>End;
-    cout<<"Maxï¼š ";cin>>Max;
-    cout<<"Minï¼š ";cin>>Min;
+    cout<<"Begin£º ";cin>>Begin;
+    cout<<"End£º ";cin>>End;
+    cout<<"Max£º ";cin>>Max;
+    cout<<"Min£º ";cin>>Min;
 }
-//è·å–ç›®å‰å¯¹è±¡ä¸ªæ•°
+//»ñÈ¡Ä¿Ç°¶ÔÏó¸öÊı
 int Stock::Get_N_count()
 {
     return N_count;
 }
-//å°†æ•°æ®å¤åˆ¶åˆ°å½“å‰å¯¹è±¡
+//½«Êı¾İ¸´ÖÆµ½µ±Ç°¶ÔÏó
 void Stock::Assign_Stock(Stock& p)
 {
     if(this!=&p)
@@ -53,7 +53,7 @@ void Stock::Assign_Stock(Stock& p)
         End=p.End;
     }
 }
-//æ¯”è¾ƒå½“æ—¥çš„å¼€ç›˜ä»·ä¸æ”¶ç›˜ä»·ï¼Œè‹¥æ˜¯å¼€ç›˜ä»·>æ”¶ç›˜ä»·ï¼Œè¿”å›çœŸï¼Œå¦åˆ™ï¼Œè¿”å›å‡
+//±È½Ïµ±ÈÕµÄ¿ªÅÌ¼ÛÓëÊÕÅÌ¼Û£¬ÈôÊÇ¿ªÅÌ¼Û>ÊÕÅÌ¼Û£¬·µ»ØÕæ£¬·ñÔò£¬·µ»Ø¼Ù
 int Compare_Stock(Stock &p)
 {
     if (p.Begin>p.End)

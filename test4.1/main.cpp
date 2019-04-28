@@ -3,14 +3,12 @@
 using namespace std;
 int main()
 {
-    Stock arr[5];
+    Stock arr[2];
     Stock* a,*b;
     void add(Stock&,Stock&);
 
     Stock m(0,0,0,0,0);
     m.Show_Stock();
-   
-    //使用Set_Stock进行赋值
     for (int i = 0; i < N; i++)
     {
         arr[i].Set_Stock();
@@ -25,7 +23,7 @@ int main()
     }
     cout<<"the number of data is: "<<Stock::Get_N_count()<<endl;
 
-    //使用Assign_Stock进行赋值
+    cout<<"now ,we are going to try the Assign function"<<endl;
     Stock p1[2],p2[2];
     int i;
     for ( i = 0; i < 2; i++)
@@ -41,7 +39,7 @@ int main()
         p2[i].Show_Stock();
     }
 
-    //计算当日收盘价与开盘价的大小关系
+    cout<<endl;
     int m1;
     for (int i = 0; i < 2; i++)
     {
@@ -68,6 +66,6 @@ void add(Stock &a,Stock &b)
 {
  	float n;
  	n=(b.Get_End()-a.Get_End())/a.Get_End();
-    cout<<n<<endl;
+    cout<<"The stock��s gain today is "<<n<<endl;
 }
 //this a test 22:18

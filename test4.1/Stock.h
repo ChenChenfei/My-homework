@@ -3,7 +3,7 @@
 #define STOCK
 #include<iostream>
 using namespace std;
-const int N=5;
+const int N=2;
 class Stock
 {
 public:

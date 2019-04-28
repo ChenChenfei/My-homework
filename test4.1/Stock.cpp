@@ -1,8 +1,9 @@
 #include"Stock.h"
 using namespace std;
-//设置当日的天数、股票开盘价，收盘价，最高价格，最低价格
 
-void Stock::Set_Stock(int n,float ma,float mi,float b,float e)
+ int Stock::N_count;
+//设置当日的天数、股票开盘价，收盘价，最高价格，最低价格
+ Stock::Stock(int n,float ma,float mi,float b,float e)
 {
     N_count++;
     Number=n;
@@ -59,15 +60,16 @@ int Compare_Stock(Stock &p)
     {
         return 1;
     }
-    if (p.Begin<p.End)
+    else if (p.Begin<p.End)
     {
         return -1;
     }
-    if (p.End==p.Begin)
+    else if (p.End==p.Begin)
     {
         return 0;
     }
-    
-    
-    
+   else 
+   {
+       return 2;
+   }
 }

@@ -26,8 +26,8 @@ void MergeSort(int sourceArr[], int tempArr[], int startIndex, int endIndex)
     if(startIndex < endIndex)
     {
         midIndex = startIndex + (endIndex-startIndex) / 2;//±ÜÃâÒç³öint
-        MergeSort(sourceArr, tempArr, startIndex, midIndex);
-        MergeSort(sourceArr, tempArr, midIndex+1, endIndex);
+        MergeSort(sourceArr, tempArr, startIndex, midIndex);//endIndex=midIndex
+        MergeSort(sourceArr, tempArr, midIndex+1, endIndex);//starIndex=midIndex+1
         Merge(sourceArr, tempArr, startIndex, midIndex, endIndex);
     }
 }

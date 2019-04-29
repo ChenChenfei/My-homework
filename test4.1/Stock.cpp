@@ -1,7 +1,9 @@
-#include"Stock.h"
+#include"Stock.hpp"
+#include<iostream>
+
 using namespace std;
 
- int Stock::N_count;
+int Stock::N_count=0;
 //设置当日的天数、股票开盘价，收盘价，最高价格，最低价格
  Stock::Stock(int n,float ma,float mi,float b,float e)
 {

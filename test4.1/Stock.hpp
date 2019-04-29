@@ -1,8 +1,7 @@
 //Stock.h
-
+#ifndef STOCK
 #define STOCK
-#include<iostream>
-using namespace std;
+
 const int N=2;
 class Stock
 {
@@ -20,3 +19,6 @@ private:
     int Number;
     float Max,Min,Begin,End;
 };
+
+#endif
+

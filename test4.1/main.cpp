@@ -1,4 +1,4 @@
-#include "Stock.h"
+#include "Stock.hpp"
 #include<iostream>
 using namespace std;
 int main()
@@ -68,4 +68,3 @@ void add(Stock &a,Stock &b)
  	n=(b.Get_End()-a.Get_End())/a.Get_End();
     cout<<"The stock¡¯s gain today is "<<n<<endl;
 }
-//this a test 22:18

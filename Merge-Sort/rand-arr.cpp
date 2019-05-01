@@ -1,21 +1,21 @@
-#include"rand-arr.h"
+/*#include"rand-arr.hpp"
 #include<iostream>
 #include<cstdlib>
 using namespace std;
 template<class T>
-T* Rand_Arr<T>::Creat_arr(int n)
+T* Rand_Arr<T>::Creat_arr()
 {
-    p1=new T[n];
-    p2=new T[n];
+    p1=new T[1000];
+    p2=new T[1000];
     ptr=0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < 1000; i++)
     {
         *(p1+i)=i;
         *(p2+i)=0;
     }
-     for (int i = 0; i < n; i++)
+     for (int i = 0; i < 1000; i++)
     {
-        ptr=rand()%n;
+        ptr=rand()%1000;
          if(*(p1+ptr)!=-1)
         {
             *(p2+i)=*(p1+ptr);
@@ -27,7 +27,7 @@ T* Rand_Arr<T>::Creat_arr(int n)
         }
     }
     /*
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < 1000; i++)
     {
        cout<<*(p2+i)<<"\t";
        if (i%10==0)
@@ -36,6 +36,7 @@ T* Rand_Arr<T>::Creat_arr(int n)
        }
     }
     */
+   /*
    return p2;
 }
 template<class T>
@@ -43,3 +44,4 @@ void Rand_Arr<T>::Delet_arr(T*pr)
 {
     delete pr;
 }
+*/

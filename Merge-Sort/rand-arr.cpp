@@ -1,4 +1,4 @@
-/*#include"rand-arr.hpp"
+#include"rand-arr.hpp"
 #include<iostream>
 #include<cstdlib>
 using namespace std;
@@ -26,17 +26,10 @@ T* Rand_Arr<T>::Creat_arr()
             i--;
         }
     }
-    /*
-    for (int i = 0; i < 1000; i++)
-    {
-       cout<<*(p2+i)<<"\t";
-       if (i%10==0)
-       {
-           cout<<endl;
-       }
-    }
-    */
-   /*
+    
+   
+    
+   
    return p2;
 }
 template<class T>
@@ -44,4 +37,4 @@ void Rand_Arr<T>::Delet_arr(T*pr)
 {
     delete pr;
 }
-*/
+

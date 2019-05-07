@@ -1,4 +1,4 @@
-/*#include<cstdlib>
+#include<cstdlib>
 template <class T>
 class Rand_Arr
 {
@@ -9,4 +9,3 @@ class Rand_Arr
     T* p1,*p2;
     T ptr;
 };
-*/
